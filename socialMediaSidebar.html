@@ -1,0 +1,76 @@
+<!-- @format -->
+
+<style>
+	.social {
+		position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+		left: 0;
+		/* Establecemos la barra en la izquierda */
+		top: 180px; /* Bajamos la barra 200px de arriba a abajo */
+		z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+	}
+
+	.social ul {
+		margin: 0px;
+		list-style: none;
+	}
+
+	.social ul li a {
+		display: inline-block;
+		color: #fff;
+		margin: 0px;
+		background: #000;
+		padding: 20px 18px;
+		text-decoration: none;
+		-webkit-transition: all 500ms ease;
+		-o-transition: all 500ms ease;
+		transition: all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	}
+
+	.social ul li .icon-facebook {
+		background: #3b5998;
+		margin: -6px 0px !important;
+	} /* Establecemos los colores de cada red social, aprovechando su class */
+	.social ul li .icon-instagram {
+		background: #e1306c;
+		margin: -6px 0px !important;
+	}
+	.social ul li .icon-whatsapp {
+		background: #00bb2d;
+		margin: -6px 0px !important;
+	}
+
+	.social ul li a:hover {
+		background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+		padding: 20px 25px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+	}
+	@media (max-width: 600px) {
+		.social ul li a {
+			padding: 3px 15px;
+		}
+		.social {
+			top: 270px;
+		}
+	}
+</style>
+<div class="social">
+	<ul>
+		<li>
+			<a href="#" target="_blank" class="icon-facebook">
+				<i
+					style="font-size: 21px; color: white; margin: 1px"
+					class="fab fa-facebook-f"
+				></i>
+			</a>
+		</li>
+		<li>
+			<a href="#" target="_blank" class="icon-instagram">
+				<i style="font-size: 19px; color: white" class="fab fa-instagram"></i>
+			</a>
+		</li>
+		<li>
+			<a href="#" target="_blank" class="icon-whatsapp">
+				<i style="font-size: 19px; color: white" class="fab fa-whatsapp"></i>
+			</a>
+		</li>
+	</ul>
+</div>
